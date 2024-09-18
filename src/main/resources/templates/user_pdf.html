@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>User PDF</title>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body id="main">
+    <div>
+        <p>User Information</p>
+        <p th:text="${'ID: ' + user.id}"></p>
+        <p th:text="${'Full Name: ' + user.fullName}"></p>
+        <p th:text="${'Phone: ' + user.phone}"></p>
+        <p th:text="${'Address: ' + user.address}"></p>
+    </div>
+</body>
+
+</html>
