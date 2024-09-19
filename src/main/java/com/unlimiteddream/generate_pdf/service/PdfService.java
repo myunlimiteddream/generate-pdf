@@ -34,7 +34,7 @@ public class PdfService {
 
     public void generateWarrantyPdf (HttpServletResponse response) throws IOException {
         Context context = new Context();
-        User user = User.builder().id("user1").fullName("Nguyen Van A").address("Ha Noi Viet Nam").phone("0123456789").build();
+        User user = User.builder().id("user1").fullName("Tony Stark").address("New York USA").phone("0123456789").build();
         context.setVariable("user", user);
         ByteArrayInputStream byteArrayInputStream = generatePdfFromThymeleaf("user_pdf", context);
         response.setContentType("application/octet-stream");
